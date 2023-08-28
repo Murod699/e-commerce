@@ -16,7 +16,7 @@ class Product extends Model
 
     public $translatable = ['name', 'description'];
 
-    public function categories(): BelongsTo
+    public function category(): BelongsTo
     {
 
         return $this->belongsTo(Category::class);
